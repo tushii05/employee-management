@@ -26,7 +26,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:4001/auth/login", {
+      const response = await axios.post("https://employee-management-api-seven.vercel.app/auth/login", {
         email,
         password,
       });

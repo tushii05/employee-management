@@ -46,7 +46,7 @@ function Signup() {
     }
     setError("");
     axios
-      .post("http://localhost:4001/auth/register", {
+      .post("https://employee-management-api-seven.vercel.app/auth/register", {
         name,
         email,
         password,

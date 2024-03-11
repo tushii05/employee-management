@@ -15,7 +15,7 @@ const Employees = () => {
   const fetchEmployee = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4001/employee/employee/${id}`
+        `https://employee-management-api-seven.vercel.app/employee/employee/${id}`
       );
       if (response.data.employees && response.data.employees.length > 0) {
         setAllEmployees(response.data.employees);
@@ -37,7 +37,7 @@ const Employees = () => {
     try {
       // Send a delete request to the backend
       const response = await axios.delete(
-        `http://localhost:4001/employee/delete_employee/${employeeId}`
+        `https://employee-management-api-seven.vercel.app/employee/delete_employee/${employeeId}`
       );
 
       if (response.data.Status) {
