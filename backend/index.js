@@ -32,6 +32,11 @@ db.once('open', () => {
   console.log('MongoDB connected successfully');
 });
 
+
+app.get("/", (req,res) => {
+res.json("Hello ")
+}
+
 app.listen(PORT, () => {
   console.log(`Server is connected and running on port ${PORT}`);
 });
