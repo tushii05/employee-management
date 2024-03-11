@@ -35,7 +35,7 @@ db.once('open', () => {
 
 app.get("/", (req,res) => {
 res.json("Hello ")
-}
+)}
 
 app.listen(PORT, () => {
   console.log(`Server is connected and running on port ${PORT}`);
