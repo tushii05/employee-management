@@ -19,7 +19,7 @@ app.use("/category", categoryRoutes);
 // );
 
 mongoose.connect(
-  'mongodb+srv://agnito14:Agnito1234@cluster0.yxrqhxe.mongodb.net/management?retryWrites=true&w=majority&appName=Cluster0',
+  'mongodb+srv://agnito14:Agnito1234@cluster0.yxrqhxe.mongodb.net/TD5?retryWrites=true&w=majority&appName=Cluster0',
 );
 
 const db = mongoose.connection;
