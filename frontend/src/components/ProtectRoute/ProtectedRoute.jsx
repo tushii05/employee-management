@@ -101,12 +101,12 @@ const ProtectedRoute = ({ children }) => {
       icon: <FaUserCircle className="react-icon" />,
       onClick: () => navigate("/home/profile"),
     },
-    {
-      title: "Homepage",
-      path: "/",
-      icon: <FaHome className="react-icon" />,
-      onClick: logout,
-    },
+    // {
+    //   title: "Homepage",
+    //   path: "/",
+    //   icon: <FaHome className="react-icon" />,
+    //   onClick: logout,
+    // },
   ];
 
   const [menu, setMenu] = useState(adminMenu);
